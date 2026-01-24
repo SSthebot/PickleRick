@@ -6,8 +6,15 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		CED5C3BE2F23D318003A707B /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = CED5C3BD2F23D318003A707B /* FirebaseAuth */; };
+		CED5C3C02F23D318003A707B /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = CED5C3BF2F23D318003A707B /* FirebaseFirestore */; };
+		CEE63E352F249985007C61EF /* Pickle-Rick-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CEE63E342F249985007C61EF /* Pickle-Rick-Info.plist */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		CED5C3AE2F23CEB5003A707B /* Pickle_Rick.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pickle_Rick.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEE63E342F249985007C61EF /* Pickle-Rick-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Pickle-Rick-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -23,6 +30,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CED5C3BE2F23D318003A707B /* FirebaseAuth in Frameworks */,
+				CED5C3C02F23D318003A707B /* FirebaseFirestore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -32,6 +41,7 @@
 		CED5C3A52F23CEB5003A707B = {
 			isa = PBXGroup;
 			children = (
+				CEE63E342F249985007C61EF /* Pickle-Rick-Info.plist */,
 				CED5C3B02F23CEB5003A707B /* Pickle_Rick */,
 				CED5C3AF2F23CEB5003A707B /* Products */,
 			);
@@ -65,6 +75,8 @@
 			);
 			name = Pickle_Rick;
 			packageProductDependencies = (
+				CED5C3BD2F23D318003A707B /* FirebaseAuth */,
+				CED5C3BF2F23D318003A707B /* FirebaseFirestore */,
 			);
 			productName = Pickle_Rick;
 			productReference = CED5C3AE2F23CEB5003A707B /* Pickle_Rick.app */;
@@ -94,6 +106,9 @@
 			);
 			mainGroup = CED5C3A52F23CEB5003A707B;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				CED5C3BC2F23D318003A707B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = CED5C3AF2F23CEB5003A707B /* Products */;
 			projectDirPath = "";
@@ -109,6 +124,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEE63E352F249985007C61EF /* Pickle-Rick-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -251,13 +267,15 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = QUV28A7JJ2;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Pickle-Rick-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -282,13 +300,15 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = QUV28A7JJ2;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Pickle-Rick-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -328,6 +348,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		CED5C3BC2F23D318003A707B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 12.8.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		CED5C3BD2F23D318003A707B /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CED5C3BC2F23D318003A707B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		CED5C3BF2F23D318003A707B /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CED5C3BC2F23D318003A707B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = CED5C3A62F23CEB5003A707B /* Project object */;
 }
