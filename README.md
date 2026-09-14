@@ -1,6 +1,6 @@
 # Smart Pickleball Paddle
 
-We all love playing pickleball, so we wanted to combine our interest in the sport with technology by building a **smart pickleball paddle** that tracks and analyzes player performance in real time.
+We all love playing pickleball and wanted to create a smart pickleball paddle.
 
 ## What It Does
 
