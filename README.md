@@ -1,4 +1,4 @@
-# Smart Pickleball Paddle
+# PickleRick
 
 We all love playing pickleball and wanted to create a smart pickleball paddle.
 
